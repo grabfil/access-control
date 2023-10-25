@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="./styles/style.css">
 <form name="logowanie" method="post" action="">
     <legend>LOGOWANIE</legend>
     <label for="login">Login: </label>
@@ -17,7 +17,7 @@ $number = 1;
         setcookie($ciastko, $ciastko_wartosc, time() + (86400 * 7), "/");
         include 'verifier.php';
         if($verify){
-            header("location:../logowanie/glowna.php");
+            header("location:./glowna.php");
         }else{
             echo "<p>"."Błedny login lub hasło, spróbuj ponownie"."</p>";
         }

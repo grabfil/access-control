@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../styles/style.css">
+<link rel="stylesheet" href="./styles/style.css">
 <?php 
 $ciastko_wartosc = null;
 if (!isset($ciastko_wartosc)){
@@ -19,7 +19,7 @@ $number = 0;
         $ciastko_wartosc = $_POST['login'];
         setcookie($ciastko, $ciastko_wartosc, time() + (86400 * 7), "/");
         include 'verifier.php';
-        header("location:../logowanie/glowna.php");
+        header("location:./glowna.php");
     }  
     
 ?>
